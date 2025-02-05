@@ -3,7 +3,7 @@ const product = [{
     name: '6-Piece Nonstick, Carbon Steel Oven Bakeware',
     rating: {
         stars: 4.5,
-        
+        count: 87
     },
     price: 2067,
     
@@ -12,7 +12,7 @@ const product = [{
     name: 'Intermediate Size Basketball',
     rating: {
         stars: 4.5,
-        
+        count: 87
     },
     price: 2095
 },{
@@ -20,7 +20,7 @@ const product = [{
     name: 'Plain Hooded Fleece Sweatshirt',
     rating: {
         stars: 4.5,
-        
+        count: 87
     },
     price: 2899
 }, {
@@ -28,7 +28,7 @@ const product = [{
     name: '6 Piece White Dinner Plate Set',
     rating: {
         stars: 4.5,
-        
+        count: 187
     },
     price: 2067
 },{
@@ -36,7 +36,7 @@ const product = [{
     name: 'Bathroom Bath Rug Mat 20 x 31 Inch - Grey',
     rating: {
         stars: 4.5,
-        
+        count: 287
     },
     price: 1250
 },{
@@ -44,7 +44,7 @@ const product = [{
     name: 'Blackout Curtains Set 4-Pack - Beige',
     rating: {
         stars: 4.5,
-        
+        count: 32
     },
     price: 4599
 },{
@@ -52,7 +52,7 @@ const product = [{
     name: 'electric-glass-and-steel-hot-water-kettle',
     rating: {
         stars: 4.5,
-        
+        count: 45
     },
     price: 3074
 },{
@@ -60,7 +60,7 @@ const product = [{
     name: 'Ultra Soft Tissue 2-Ply - 18 Box',
     rating: {
         stars: 4.5,
-        
+        count: 22
     },
     price: 1050
 },{
@@ -68,7 +68,7 @@ const product = [{
     name: 'athletic sneakers gray',
     rating: {
         stars: 4.5,
-        
+        count: 99
     },
     price: 5023
 
@@ -77,7 +77,7 @@ const product = [{
     name: 'Liquid Laundry Detergent, 110 Loads, 82.5 Fl Oz',
     rating: {
         stars: 4.5,
-        
+        count: 32
     },
     price: 2899,
     
@@ -87,7 +87,7 @@ const product = [{
     name: 'Luxury Towel Set - Graphite Gray',
     rating: {
         stars: 4.5,
-        
+        count: 44
     },
     price: 3599,
 },{
@@ -95,7 +95,7 @@ const product = [{
     name: `Men's Regular-Fit Quick-Dry Golf Polo Shirt`,
     rating: {
         stars: 4.5,
-        
+        count: 123
     },
     price: 1599,
 },{
@@ -103,7 +103,7 @@ const product = [{
     name: `Men's Slim-Fit Summer Shorts`,
     rating: {
         stars: 4.5,
-        
+        count: 11
     },
     price: 1699,
 },{
@@ -111,7 +111,7 @@ const product = [{
     name: `Round Sunglasses`,
     rating: {
         stars: 4.5,
-        
+        count: 22
     },
     price: 1560,
 },{
@@ -119,7 +119,7 @@ const product = [{
     name: `Sterling Silver Sky Flower Stud Earrings`,
     rating: {
         stars: 4.5,
-        
+        count: 33   
     },
     price: 1799, 
 },{
@@ -135,7 +135,7 @@ const product = [{
     name: `Women's Chiffon Beachwear Cover Up - Black`,
     rating: {
         stars: 4.5,
-        
+        count: 33
     },
     price: 2070,   
 },{
@@ -143,7 +143,7 @@ const product = [{
     name: `Duvet Cover Set with Zipper Closure`,
     rating: {
         stars: 4.5,
-        
+        count: 155
     },
     price: 2399,  
 }];

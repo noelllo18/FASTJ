@@ -2,11 +2,12 @@
 
 
 
+
 let prodHTML = '';
 product.forEach((products) =>{
     prodHTML +=
     `<div class="item"><img src="${products.image}" class="item-img"><img src= "images/rating-${products.rating.stars * 10}.png" class="rating" >
-    
+     <div>${products.count}</div>
                 <p>${products.name}</p>
                 <select name="" >
                 <optgroup>
@@ -25,11 +26,21 @@ product.forEach((products) =>{
             </select>
             <p>$${(products.price / 100).toFixed(2)}</p>
        
-            <button class="btn-primary">Add to Cart</button>
+            <button class="btn-primary js-add-to-cart" data-product-name="${products.name}">Add to Cart</button>
         </div>`;
 });
 
-                console.log(prodHTML);
-    
-
+                
 document.querySelector('.js-item-container').innerHTML= prodHTML;
+
+document.querySelectorAll('.js-add-to-cart')
+.forEach((button) =>{
+    button.addEventListener('click', () => {
+       const productName = button.dataset.productName;
+       cart.push({
+        productName: productName,
+        quantity: 1
+       });
+       console.log(cart);
+    });
+});
