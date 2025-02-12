@@ -105,13 +105,18 @@ span.next, span.prev{
     z-index: 1;
     user-select: none;
 }
-span.next{
+.next{
     right: 20px;
 }
-span.prev{
+.prev{
     left: 20px;
 }
-span:hover {
+.next:hover  {
+    background-color: #032519;
+    color: #3FC495;
+    opacity: 0.8;
+}
+.prev:hover  {
     background-color: #032519;
     color: #3FC495;
     opacity: 0.8;
