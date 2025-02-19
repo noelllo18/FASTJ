@@ -4,8 +4,8 @@ const closeBtn = document.querySelector('.close');
 
 // if i click openbtn nav will show
 openBtn.addEventListener('click', () => {
-    content.style.right = '0';
+    content.style.display = 'flex';
 });
 closeBtn.addEventListener('click', () => {
-    content.style.right = '-100%';
+    content.style.display = 'none';
 });

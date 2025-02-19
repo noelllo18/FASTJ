@@ -44,3 +44,19 @@ document.querySelectorAll('.js-add-to-cart')
        console.log(cart);
     });
 });
+
+// mouseover list will show
+
+const list = document.querySelector('.menu');
+const dropDown = document.querySelector('.list');
+
+
+list.addEventListener('mouseover', () =>{
+    dropDown.style.display = 'flex';
+});
+
+list.addEventListener('mouseout', () =>{
+    dropDown.style.display = 'none';
+    dropDown.style.transition = '0.75s ease-in';
+});
+

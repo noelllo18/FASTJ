@@ -129,7 +129,7 @@ nav .left-icon{
   
 input {
     
-    width: 300px;
+    width: 900px;
     padding: 1.0rem 2.0rem;
     border-radius: 50px ;
     cursor: text;
@@ -189,6 +189,7 @@ nav svg{
 }
 
 @media (max-width: 600px){
+    
     .left-img{
         display: none;
     }
@@ -198,32 +199,54 @@ nav svg{
     .link-container {
         flex-direction: column;
         background-color:var(--pallete-13);
-        height: 400px;
-        width: 300px;
+        height: 600px;
+        width: 100%;
         align-items: flex-start;
+        
         top:0;
-        right: -100%;
-        display: flex;
+        right: 0;
+      
+        display: none;
         position: fixed;
         bottom: 0;
         box-shadow: 2px 5px 8px rgb(0 ,0, 0, 2);
         z-index: 10;
         transition: .75s ease-in-out;
+        margin-top: 60px;
     }
     nav a{
         padding: 20px;
         height: 100%;
         width: 100%;
         justify-content: center;
-        align-items: center;
+        text-align: center;
+        
+        
+    }
+    nav svg{
+        display: flex;
+        justify-content: flex-start;
     }
     nav a:hover{
-        background-color: #9CBBFC;
+        background-color: #5b5f53;
+    }
+    .add-to-cart{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
     }
     .add-cart-btn, .add-cart {
-        display: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       position: absolute;
+         right: 50%;
+       
      
     }
+  
     .open-sidebar{
        display: flex;
        align-items: center;
@@ -238,10 +261,35 @@ nav svg{
     }
     .close{
         display: flex;
+       justify-content: flex-start;
+    }
+    .js-list{
+        display: flex;
+        flex-direction: column;
+       
+       top: 0;
+    }
+    .list{
+        background-color: #19384A;
+        width: 300px;
+        height: 400px;    
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 24px;
+        position: relative;
+        margin-top: 150px;
+        
+    }
+    .list li{
+       color: var(--white);
+       list-style: none;
+       
+       
+
     }
     input {
-    
-        width: 200px;
+        width: 350px;
         padding: 1.0rem 1.5rem;
         border-radius: 50px ;
         cursor: text;
@@ -256,7 +304,12 @@ nav svg{
         display: flex;
     }
        
-        
+        .list{
+            display: none;
+        }
+        .list:hover{
+            transition: .75s ease-in;
+        }
         
     
 }
