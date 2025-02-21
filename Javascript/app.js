@@ -60,3 +60,5 @@ list.addEventListener('mouseout', () =>{
     dropDown.style.transition = '0.75s ease-in';
 });
 
+
+

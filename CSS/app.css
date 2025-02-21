@@ -128,15 +128,15 @@ nav .left-icon{
   }
   
 input {
-    
-    width: 600px;
-    padding: 1.0rem 2.0rem;
+   
+    padding: 1.0rem 20rem;
     border-radius: 50px ;
     cursor: text;
     border: 1px solid var(--pallete-11);;
     position: relative;
     top: 0;
     left: 0;
+   
 }
 input:hover{
     border: 1px solid var(--pallete-19);
@@ -186,6 +186,78 @@ nav svg{
     cursor: pointer;
     flex-shrink: 0;
 
+}@media (max-width: 1000px){
+    .link-container {
+        flex-direction: column;
+        background-color:var(--pallete-13);
+        height: 600px;
+        width: 100%;
+        align-items: flex-start;
+        top:0;
+        right: 0;
+        display: none;
+        position: fixed;
+        bottom: 0;
+        box-shadow: 2px 5px 8px rgb(0 ,0, 0, 2);
+        z-index: 10;
+        transition: .75s ease-in-out;
+        margin-top: 60px;
+    }
+    nav a{
+        padding: 20px;
+        height: 100%;
+        width: 100%;
+        justify-content: center;
+        text-align: center;
+        
+        
+    }
+    nav svg{
+        display: flex;
+        justify-content: flex-start;
+    }
+    nav a:hover{
+        background-color: #5b5f53;
+    }
+    .add-to-cart{
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    .add-cart-btn, .add-cart {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+       position: absolute;
+         right: 50%;
+       
+     
+    }
+  
+    .open-sidebar{
+       display: flex;
+       align-items: center;
+       justify-content: center;
+       
+    }
+    nav .open{
+        display: flex;
+        flex-shrink: 0;
+        margin-left: 10px;
+       
+    }
+    .close{
+        display: flex;
+       justify-content: flex-start;
+    }
+    .js-list{
+        display: flex;
+        flex-direction: column;
+       top: 0;
+    }
+
 }
 
 @media (max-width: 700px){
@@ -195,6 +267,7 @@ nav svg{
     }
     .icon-left{
         display: flex;
+        flex-grow: 1;
     }
     .link-container {
         flex-direction: column;
@@ -263,31 +336,7 @@ nav svg{
         display: flex;
        justify-content: flex-start;
     }
-    .js-list{
-        display: flex;
-        flex-direction: column;
-       
-       top: 0;
-    }
-    .list{
-        background-color: #19384A;
-        width: 300px;
-        height: 400px;    
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        font-size: 24px;
-        position: relative;
-        margin-top: 150px;
-        
-    }
-    .list li{
-       color: var(--white);
-       list-style: none;
-       
-       
-
-    }
+    
     input {
         width: 250px;
         padding: 1.0rem 1.5rem;
@@ -304,12 +353,7 @@ nav svg{
         display: flex;
     }
        
-        .list{
-            display: none;
-        }
-        .list:hover{
-            transition: .75s ease-in;
-        }
+       
         
     
 }
